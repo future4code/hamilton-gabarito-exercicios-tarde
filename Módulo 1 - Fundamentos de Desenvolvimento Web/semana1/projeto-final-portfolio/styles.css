@@ -1,0 +1,191 @@
+/* font-family: 'Amatic SC', cursive; cabecalho
+font-family: 'Sacramento', cursive;  nome */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #4b4b4b;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding: 0 0 5px 30px;
+}
+
+.cabecalho {
+    background-color: #BC5DFC;
+    padding: 20px 10px;
+}
+
+#meu-nome {
+    font-family: 'Sacramento', cursive;
+    color: whitesmoke;
+    font-size: 50px;
+    padding-left: 20px;
+    display: inline;
+}
+
+.areas-site {
+    display: inline;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.areas-site a {
+    margin: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color:#FAD2FB;
+    font-weight: 500;
+}
+
+.container-quem-sou {
+    background-color: #FDECFD;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.container-quem-sou > img {
+    display: inline;
+    height: 120px;
+    border-radius: 70px;
+}
+
+.container-quem-sou > p {
+    display: inline;
+    overflow: hidden;
+    float: right;
+    width: 80%;
+    text-align: left;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.container-instituicoes {
+    background-color: #EBEEFC;
+    padding: 20px 10px;
+}
+
+.container-instituicoes > ul, .container-instituicoes > ol {
+    padding: 0 0 20px 7%;
+}
+
+.container-projetos {
+    background-color: #EDFAFD;
+    padding: 20px 10px;
+    height: 250px;
+}
+
+.div-projetos {
+    background-color: white;
+    color: black;
+    border: 2px dotted darkgrey;
+    padding: 50px;
+    width: 20%;
+    margin: 10px 20px;
+    float: left;
+    text-align: center;
+}
+
+.div-projetos:first-of-type {
+    margin-left: 18%;
+}
+
+.container-skills {
+    background-color: #EBF5F4;
+    padding: 20px 10px;
+    clear: both;
+}
+
+.container-skills > ul {
+    padding-left: 45px;
+    padding-right: 10px;
+}
+
+.container-skills li {
+    margin: 15px 0;
+}
+
+.container-contato{
+    background-color: #DFDFDF;
+    padding: 20px 0;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px dashed darkgrey;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.linha-form {
+    margin: 10px;
+}
+
+input{
+    width: 70%;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 18px;
+    color: gray;
+}
+
+#texto-cont {
+    display: block;
+    height: 100px;
+}
+
+button {
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.container-redes {
+    background-color: #ECD2FE;
+    padding: 20px 0;
+    text-align: right;
+}
+
+.container-redes > p {
+    display: inline;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.container-redes img {
+    height: 50px;
+    padding: 0 20px;
+}
+
+.img-projeto {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-projeto > img {
+    width: 50%;
+}
+
+.img-projeto > p {
+    margin-top: 10px;
+}
