@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+#first-block {
+    width: 100%;
+    background: red;
+    flex-grow: 1;
+}
+
+.three-blocks-container {
+    width: 100%;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.three-blocks-container>div:first-child {
+    flex-grow: 2;
+    margin: 0px;
+    height: 100%;
+    border: none;
+}
+
+.three-blocks-container div {
+    flex-grow: 1;
+    margin: 10px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.blue-block {
+    background-color: blue;
+}
+
+.yellow-block {
+    background-color: yellow;
+}
+
+.green-block {
+    background-color: green;
+}
+
+#middle-container {
+    width: 100%;
+    justify-content: space-around;
+    flex-grow: 5;
+    padding: 10px;
+}
+
+.black-block:first-child {
+    margin-right: 15px;
+}
+
+.black-block:last-child {
+    margin-left: 15px;
+}
+
+.black-block {
+    flex-grow: 1;
+    height: 100%;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .three-blocks-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0px 5px;
+    }
+    .three-blocks-container div {
+        flex-grow: 1;
+        margin: 10px;
+        height: 100%;
+        border: 1px solid black;
+    }
+    #first-block {
+        margin-bottom: 10px;
+    }
+    .black-block:first-child {
+        margin-right: 8px;
+    }
+    .black-block:last-child {
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .three-blocks-container>div:first-child {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .three-blocks-container>div:last-child {
+        height: 33%;
+    }
+    #middle-container {
+        width: 100%;
+        justify-content: space-around;
+        flex-grow: 2;
+        padding: 10px;
+    }
+}
