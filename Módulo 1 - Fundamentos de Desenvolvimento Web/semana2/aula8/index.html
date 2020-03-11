@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FutureTube</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 100%;
+        background: #EF843B;
+        position: fixed;
+        top: 0;
+        padding: 10px;
+    }
+    
+    nav>ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-between
+    }
+    
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(200px, 50%);
+        grid-gap: 10px;
+        padding: 100px 20px;
+    }
+    
+    .media-box {
+        background-color: black;
+        color: white;
+        position: relative;
+        border: 1px solid green;
+        box-sizing: border-box;
+    }
+    
+    .media-box .title {
+        position: absolute;
+        width: calc(100% - 5px);
+        background: rgba(255, 255, 255);
+        color: black;
+        height: 20%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    
+    .media-box img {
+        width: 100%;
+    }
+    
+    footer {
+        background: #333B3E;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        padding: 0 10px;
+    }
+    
+    .miclass {
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    input {
+        padding: 10px;
+        height: 5px;
+        width: 50%;
+    }
+    
+    @media (max-width: 400px) {
+        footer {
+            position: relative;
+            padding: 0;
+        }
+        section {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <section class="container">
+        <div class="media-box">
+            <a href="interna.html">
+                <img src=" https://picsum.photos/400/400 " alt=" ">
+                <div class="title ">Media 1</div>
+            </a>
+        </div>
+        <div class="media-box ">
+            <a href="interna.html">
+                <img src="https://picsum.photos/400/400?a=1 " alt=" ">
+                <div class="title ">Media 2</div>
+            </a>
+        </div>
+        <div class="media-box ">
+            <img src="https://picsum.photos/400/400?a=2 " alt=" ">
+            <div class="title ">Media 3</div>
+        </div>
+        <div class="media-box ">
+            <img src="https://picsum.photos/400/400?a=3 " alt=" ">
+            <div class="title ">Media 4</div>
+        </div>
+        <div class="media-box ">
+            <img src="https://picsum.photos/400/400?a=4 " alt=" ">
+            <div class="title ">Media 5</div>
+        </div>
+        <div class="media-box ">
+            <img src="https://picsum.photos/400/400?a=5 " alt=" ">
+            <div class="title ">Media 6</div>
+        </div>
+        <div class="media-box ">
+            <img src="https://picsum.photos/400/400?a=6 " alt=" ">
+            <div class="title ">Media 7</div>
+        </div>
+        <div class="media-box ">
+            <img src="https://picsum.photos/400/400?a=7 " alt=" ">
+            <div class="title ">Media 8</div>
+        </div>
+    </section>
+    <nav>
+        <ul>
+            <li class="miclass ">FutureTube</li>
+            <li class="4 "><input type="text " name="busca " id="busca " placeholder="Busca "></li>
+        </ul>
+    </nav>
+    <footer>
+        <h1>Oi! Eu moro no footer!</h1>
+    </footer>
+</body>
+
+</html>
