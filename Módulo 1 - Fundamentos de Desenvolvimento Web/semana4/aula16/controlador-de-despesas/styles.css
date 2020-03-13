@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h2 {
+    width: 100vw;
+    text-align: center;
+}
+
+section {
+    width: 30vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-cadastro {
+    width: 30vw;
+}
+
+.despesa-unica {
+    border: 1px dotted rgb(73, 73, 73);
+}
