@@ -1,0 +1,9 @@
+.page-section-container {
+    width: 40vw;
+    margin: 10px 0;
+}
+
+.page-section-container > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
